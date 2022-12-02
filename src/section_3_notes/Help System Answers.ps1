@@ -20,4 +20,5 @@ Get-EventLog -Newest 20 -LogName System
 
 # Question 3 
 # The get-command, gets all the commands on the computer we want to get all the commands of all types
-
+Get-Command -All
+Get-Command -Type Cmdlet
