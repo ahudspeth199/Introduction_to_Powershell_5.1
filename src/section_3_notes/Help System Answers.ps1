@@ -20,5 +20,12 @@ Get-EventLog -Newest 20 -LogName System
 
 # Question 3 
 # The get-command, gets all the commands on the computer we want to get all the commands of all types
-Get-Command -All
-Get-Command -Type Cmdlet
+Get-Command *
+
+#########################################################################
+# Question 4
+Get-Content 
+# From the root of your c:\ create a folder called "Content"
+# Open notepad -> create a few lines-> save it to your Content directory-> name it text.txt
+# Use the get-content command to the contents of your text file and display it to the console
+
