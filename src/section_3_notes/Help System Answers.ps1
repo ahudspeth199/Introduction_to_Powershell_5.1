@@ -51,4 +51,24 @@ Get-Alias
 Get-Help Get-Alias -ShowWindow
 
 Get-Alias -Definition Get-Service
+#############################################################################################
 
+#Question 7
+# How would your start and stop the bit service and see the result
+Get-Command *service*
+
+start-service bite -PassThru
+##############################################################################################
+
+#Question 8
+# How would you display the installed version of powershell
+$PSVersionTable
+
+##############################################################################################
+#Question 9
+# How would you count the number of aliases in a current session
+Get-Help Get-Alias -ShowWindow
+
+Get-command *measure* 
+
+Get-Alias | Measure-Object
