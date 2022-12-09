@@ -30,3 +30,7 @@ Get-EventLog [-AsString] [-ComputerName <String[]>] [-List]
 
 # Notice Dash long name is surrounded by square brackets, but the argument is not.
 # That means because there are square brackets around the perimeter dash log name, the name log name is optional, but the argument or string is required.
+
+# Positional
+Get-EventLog [-LogName] <String> [[-InstanceId]<Int64[]>] [-Newest <Int32>]
+
