@@ -3,7 +3,8 @@
 help Get-Service -ShowWindow
 # Syntax
     # Paramter Set#1
-    Get-Service [-ComputerName <System.String[]>] [-DependentServices ] -DisplayName <System.String[]> [-Exclude <System.String[]>] [-Include <System.String[]>] [-RequiredServices ] [<CommonParameters>]
+    Get-Service [-ComputerName <System.String[]>] [-DependentServices ] -DisplayName <System.String[]> [-Exclude <System.String[]>] 
+    [-Include <System.String[]>] [-RequiredServices ] [<CommonParameters>]
 
     # Paramter Set#2
     Get-Service [-ComputerName <System.String[]>] [-DependentServices ] [-Exclude <System.String[]>] [-Include <System.String[]>] [-InputObject <System.ServiceProcess.ServiceController[]>] [-RequiredServices ] [<CommonParameters>]
@@ -34,3 +35,32 @@ Get-EventLog [-AsString] [-ComputerName <String[]>] [-List]
 # Positional
 Get-EventLog [-LogName] <String> [[-InstanceId]<Int64[]>] [-Newest <Int32>]
 
+
+Get-EventLog Application -EntryType Warning, Error -Newest 20
+
+Get-Service [-ComputerName <System.String[]>] [-DependentServices ] -DisplayName <System.String[]> [-Exclude <System.String[]>] 
+    [-Include <System.String[]>] [-RequiredServices ] [<CommonParameters>]
+
+Get-Service -DisplayName 'ActiveX Installer (AxInstSV)'
+# If there are no square brackets around the parameter in the argument, the parameter in the argument are required.
+# If there are square brackets around the parameter and the argument, the parameter is optional and not required
+
+# Get in the habit of analyzing the syntax of a commandment, a dash indicates a parameter.
+-LogName
+
+# Angle brackets indicate an argument.
+<String>
+
+# If there are two brackets inside two angle brackets, this means that the parameter can take multiple arguments separated by a comma.
+<Int64[]>
+
+# Square brackets around the parameter and the argument means the parameter is optional
+[[-InstanceId] <Int64[]>]
+
+Get-EventLog [-LogName] <string>
+# because the log name is surrounded by square brackets and the arguments string is not, that makes Dash log name optional, And the argument required
+# because Dash log name is surrounded by square brackets and its position is zero. This makes this parameter positional.
+
+{Error | Information | FailureAudit | SuccessAudit | Warning}
+# Curly braces, a parameter followed by several choices, separated by vertical lines and surrounded by curly braces, 
+# using this parameter, you can choose various items to expand the functionality of the commandlet
