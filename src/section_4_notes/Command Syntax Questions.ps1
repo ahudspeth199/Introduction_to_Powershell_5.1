@@ -11,7 +11,11 @@ Syntax
     Get-Service [[-Name] <System.String[]>] [-ComputerName <System.String[]>] [-DependentServices ] [-Exclude <System.String[]>] 
     [-Include <System.String[]>] [-RequiredServices ] [<CommonParameters>]
 
-# Number one, every command that is based upon the same structure, a name for this structure is
+# Number one, 
+# every command that is based upon the same structure, a name for this structure is
+## Syntax
 
 # Number two, 
 # a dash tells Power Shell that A is being used.
+## switch operators
+
