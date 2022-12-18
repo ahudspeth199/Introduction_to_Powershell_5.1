@@ -32,3 +32,54 @@ Syntax
 
 # Number six
 # These three groups are called ____
+
+
+# Question number two this question is in three parts, 
+# number one.
+# Take a look at the parameter sets from get service. Can you tell me which parameters are unique in each set?
+
+Syntax
+    Get-Service [-ComputerName <System.String[]>] [-DependentServices ] -DisplayName <System.String[]> [-Exclude <System.String[]>] 
+    [-Include <System.String[]>] [-RequiredServices ] [<CommonParameters>]
+
+    Get-Service [-ComputerName <System.String[]>] [-DependentServices ] [-Exclude <System.String[]>] [-Include <System.String[]>]
+    [-InputObject <System.ServiceProcess.ServiceController[]>] [-RequiredServices ] [<CommonParameters>]
+
+    Get-Service [[-Name] <System.String[]>] [-ComputerName <System.String[]>] [-DependentServices ] [-Exclude <System.String[]>] 
+    [-Include <System.String[]>] [-RequiredServices ] [<CommonParameters>]
+
+## -DisplayName <System.String[]>
+
+# Number two, 
+# now tell me what parameters are common in each set.
+-ComputerName <System.String[]>
+
+# Number three, 
+# you probably noticed that common parameters are common to all three sets, what command 
+# would you use to check out the help or common parameter?   
+Get-Help Get-Service
+
+# Question number three from the IAC type, get-service, then press return.
+Syntax
+    Get-Service [-ComputerName <System.String[]>] [-DependentServices ] -DisplayName <System.String[]> [-Exclude <System.String[]>] 
+    [-Include <System.String[]>] [-RequiredServices ] [<CommonParameters>]
+
+    Get-Service [-ComputerName <System.String[]>] [-DependentServices ] [-Exclude <System.String[]>] [-Include <System.String[]>]
+    [-InputObject <System.ServiceProcess.ServiceController[]>] [-RequiredServices ] [<CommonParameters>]
+
+    Get-Service [[-Name] <System.String[]>] [-ComputerName <System.String[]>] [-DependentServices ] [-Exclude <System.String[]>] 
+    [-Include <System.String[]>] [-RequiredServices ] [<CommonParameters>]
+
+# You see, the command ran. Now, type, get-help Get-Service -full and press return.
+# Now explain using the syntax, why get service ran without using any parameter?
+
+# Question number four.
+
+# From the IAC type get-eventlog, then press return.
+# Notice that get-eventlog is asking for the name of one of the log file.
+# Now, press CTRL-C
+# Now type, get-help get-eventlog -full Press return.
+# Using the syntax explain why get event log requires typing a value or 
+# a log name while get service ran without a value or even a parameter
+
+
