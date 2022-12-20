@@ -82,4 +82,11 @@ Syntax
 # Using the syntax explain why get event log requires typing a value or 
 # a log name while get service ran without a value or even a parameter
 
+# Question number five, 
+# using help get -eventlog -showwindow
+# Take a look at the parameter instance ID
+# Explain why instance ID should be second in the order of parameter
 
+# Question number six
+# While in show window scroll down to -newest
+# Why can't you place -newest anywhere in the order of parameter
