@@ -33,3 +33,6 @@ handle.
 • 15. Like turn-on lights, add air to the tires, check for traffic in our side mirror, turn left
 using our steering wheel. Clean the dirt off our spoiler. And use the door handle to open
 the door.
+
+
+
